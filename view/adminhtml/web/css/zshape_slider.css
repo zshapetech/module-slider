@@ -1,0 +1,13 @@
+/**
+ * @package ZShapeTech_Slider
+ * @author ZShapeTech <zshapetech@gmail.com>
+ * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @version $Id$
+ */
+.data-grid .data-grid-thumbnail-cell.zshape-slider-column {
+	width: 30rem;
+}
+
+.data-grid .data-grid-thumbnail-cell.zshape-slider-column img {
+	width: auto;
+}

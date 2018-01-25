@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package ZShapeTech_Slider
+ * @author ZShapeTech <zshapetech@gmail.com>
+ * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @version $Id$
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="zshape_slide_edit"/>
+    <body/>
+</page>

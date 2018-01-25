@@ -1,0 +1,35 @@
+<?php
+/**
+ * @package ZShapeTech_Slider
+ * @author ZShapeTech <zshapetech@gmail.com>
+ * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @version $Id$
+ */
+?>
+<?php $slideCollection = $block->getSlideCollection(); $slidesCount = count($slideCollection); if($slidesCount): ?>
+<div class="zshape-slider-container">
+	<ul>
+		<?php foreach($slideCollection as $slide) { $link = $slide->getLink(); $title = $slide->getTitle();	$image = $slide->getImage();?>
+		<li>
+			<?php if($link) { ?><a href="<?php echo $link; ?>" target="_blank"><?php } ?>
+			<img src="<?php echo $image;?>" alt="<?php echo $title;?>" />
+			<?php if($link) { ?></a><?php } ?>
+		</li>
+		<?php } ?>
+	</ul>
+</div>
+<?php if($block->getSliderEnable() && ($slidesCount > 1)) { ?>
+<script>
+require(['jquery', 'slick'], function($) {
+	$('.zshape-slider-container ul').slick({
+		adaptiveHeight: <?php if($block->getAdaptiveHeight()) { ?>true<?php } else { ?>false<?php } ?>,
+		autoplay: <?php if($block->getSliderAutoplay()) { ?>true<?php } else { ?>false<?php } ?>,
+		autoplaySpeed: <?php echo $block->getSliderAutoplaySpeed() ?>,
+		arrows: <?php if($block->getShowArrows()) { ?>true<?php } else { ?>false<?php } ?>,
+		dots: <?php if($block->getShowDots()) { ?>true<?php } else { ?>false<?php } ?>
+	}); 
+});
+</script>
+<?php } ?>
+<?php endif; ?>
+

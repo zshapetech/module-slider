@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package ZShapeTech_Slider
+ * @author ZShapeTech <zshapetech@gmail.com>
+ * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @version $Id$
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="ZShapeTech_Core::core">
+					<resource id="ZShapeTech_Slider::slider" title="Slider" sortOrder="0">
+						<resource id="ZShapeTech_Slider::settings" title="Settings" sortOrder="0" />
+						<resource id="ZShapeTech_Slider::save" title="Save Slide" translate="title" sortOrder="10" />
+                        <resource id="ZShapeTech_Slider::slide_delete" title="Delete Slide" translate="title" sortOrder="20" />
+					</resource>
+                </resource>
+				<resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="ZShapeTech_Slider::slider_config" title="Slider config" translate="true" sortOrder="15" />
+                        </resource>
+                    </resource>
+                </resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

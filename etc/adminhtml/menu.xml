@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package ZShapeTech_Slider
+ * @author ZShapeTech <zshapetech@gmail.com>
+ * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @version $Id$
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+		<add id="ZShapeTech_Slider::slider" title="Slider" module="ZShapeTech_Slider" sortOrder="0" parent="ZShapeTech_Core::core" resource="ZShapeTech_Slider::slider"/>
+		<add id="ZShapeTech_Slider::settings" title="Settings" module="ZShapeTech_Slider" sortOrder="0" parent="ZShapeTech_Slider::slider" action="adminhtml/system_config/edit/section/zshape_slider" resource="ZShapeTech_Slider::slider"/>
+		<add id="ZShapeTech_Slider::slides" title="Manage slides" module="ZShapeTech_Slider" sortOrder="1" parent="ZShapeTech_Slider::slider" action="zshape/slide" resource="ZShapeTech_Slider::slider"/>
+	</menu>
+</config>

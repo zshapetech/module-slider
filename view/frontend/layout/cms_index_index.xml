@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package ZShapeTech_Slider
+ * @author ZShapeTech <zshapetech@gmail.com>
+ * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @version $Id$
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+        <css src="ZShapeTech_Core::css/slick.css" />
+        <css src="ZShapeTech_Core::css/slick-theme.css" />
+    </head>
+    <body>
+        <referenceContainer name="columns.top">
+			<block class="ZShapeTech\Slider\Block\Slide" name="zshape.slider" template="ZShapeTech_Slider::slider.phtml" />
+        </referenceContainer>
+    </body>
+</page>

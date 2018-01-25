@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package ZShapeTech_Slider
+ * @author ZShapeTech <zshapetech@gmail.com>
+ * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @version $Id$
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+		<section id="zshape_slider" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Slider</label>
+            <tab>zshapetech</tab>
+            <resource>ZShapeTech_Slider::slider_config</resource>
+            <group id="options" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Settings</label>
+				<field id="enable" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+					<label>Enable</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="adaptive_height" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+					<label>Adaptive height</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="autoplay" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+					<label>Autoplay</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="autoplay_speed" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Autoplay speed (ms)</label>
+                    <validate>validate-number</validate>
+                </field>
+                <field id="arrows" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+					<label>Show arrows</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="dots" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+					<label>Show dots</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+        </section>
+	</system>
+</config>

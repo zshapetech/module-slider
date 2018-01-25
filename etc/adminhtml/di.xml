@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package ZShapeTech_Slider
+ * @author ZShapeTech <zshapetech@gmail.com>
+ * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @version $Id$
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="ZShapeTech\Slider\Block\Adminhtml\Slide\Grid\Renderer\Action\UrlBuilder">
+        <arguments>
+            <argument name="frontendUrlBuilder" xsi:type="object">Magento\Framework\Url</argument>
+        </arguments>
+    </type>
+</config>
